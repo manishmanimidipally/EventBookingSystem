@@ -1,5 +1,7 @@
 package com.eventbooking.service;
 
+import java.util.List;
+
 import com.eventbooking.dao.EventDAO;
 import com.eventbooking.dao.SeatDAO;
 import com.eventbooking.daoimpl.EventDAOImpl;
@@ -8,8 +10,6 @@ import com.eventbooking.exception.EventNotFoundException;
 import com.eventbooking.model.Event;
 import com.eventbooking.model.Seat;
 import com.eventbooking.util.IDGenerator;
-
-import java.util.List;
 
 public class EventService {
 

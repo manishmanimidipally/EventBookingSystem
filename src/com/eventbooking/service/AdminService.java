@@ -1,12 +1,12 @@
 package com.eventbooking.service;
 
+import java.util.List;
+
 import com.eventbooking.dao.AdminDAO;
 import com.eventbooking.daoimpl.AdminDAOImpl;
-import com.eventbooking.model.Admin;
 import com.eventbooking.exception.UserNotFoundException;
+import com.eventbooking.model.Admin;
 import com.eventbooking.util.IDGenerator;
-
-import java.util.List;
 
 public class AdminService {
 

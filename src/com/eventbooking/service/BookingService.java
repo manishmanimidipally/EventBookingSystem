@@ -1,5 +1,8 @@
 package com.eventbooking.service;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 import com.eventbooking.dao.BookingDAO;
 import com.eventbooking.dao.EventDAO;
 import com.eventbooking.dao.SeatDAO;
@@ -13,9 +16,6 @@ import com.eventbooking.model.Booking;
 import com.eventbooking.model.Event;
 import com.eventbooking.model.Seat;
 import com.eventbooking.util.IDGenerator;
-
-import java.time.LocalDateTime;
-import java.util.List;
 
 public class BookingService {
 

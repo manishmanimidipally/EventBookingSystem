@@ -124,11 +124,11 @@ public class Main {
 
         System.out.print("Enter Phone: ");
         String phone = scanner.nextLine();
-        
+
         int userId = IDGenerator.generateUserId();
 
         User user = new User(
-        		userId,
+                userId,
                 name,
                 email,
                 password,
