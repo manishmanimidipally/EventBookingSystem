@@ -8,13 +8,13 @@ public class IDGenerator {
             new AtomicInteger(1001);
 
     private static final AtomicInteger ADMIN_ID =
-            new AtomicInteger(5001);
+            new AtomicInteger(5002);
 
     private static final AtomicInteger EVENT_ID =
-            new AtomicInteger(10001);
+            new AtomicInteger(10004);
 
     private static final AtomicInteger SEAT_ID =
-            new AtomicInteger(20001);
+            new AtomicInteger(20207);
 
     private static final AtomicInteger BOOKING_ID =
             new AtomicInteger(30001);

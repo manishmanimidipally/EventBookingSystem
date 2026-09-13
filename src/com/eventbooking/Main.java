@@ -16,6 +16,7 @@ import com.eventbooking.service.BookingService;
 import com.eventbooking.service.EventService;
 import com.eventbooking.service.PaymentService;
 import com.eventbooking.service.UserService;
+import com.eventbooking.util.IDGenerator;
 
 public class Main {
 
@@ -123,8 +124,11 @@ public class Main {
 
         System.out.print("Enter Phone: ");
         String phone = scanner.nextLine();
+        
+        int userId = IDGenerator.generateUserId();
 
         User user = new User(
+        		userId,
                 name,
                 email,
                 password,
