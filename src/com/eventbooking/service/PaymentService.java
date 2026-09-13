@@ -1,5 +1,9 @@
 package com.eventbooking.service;
 
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.UUID;
+
 import com.eventbooking.dao.BookingDAO;
 import com.eventbooking.dao.PaymentDAO;
 import com.eventbooking.daoimpl.BookingDAOImpl;
@@ -9,10 +13,6 @@ import com.eventbooking.exception.PaymentException;
 import com.eventbooking.model.Booking;
 import com.eventbooking.model.Payment;
 import com.eventbooking.util.IDGenerator;
-
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.UUID;
 
 public class PaymentService {
 
@@ -49,9 +49,7 @@ public class PaymentService {
                 paymentDAO.getPaymentByBookingId(bookingId);
 
         if (existingPayment != null) {
-            throw new PaymentException(
-                    "Payment already exists for this booking"
-            );
+            throw new PaymentException("Payment already exists for this booking");
         }
 
         if (paymentMethod == null ||
